@@ -50,7 +50,9 @@ td.mat-cell {
 }
  
  td.mat-cell:first-child {
-  border-radius: 20px !important;
+  background-color: #007598 !important;
+  margin-top: 10px !important;
+
 }
 
 td.mat-cell:last-child {
@@ -64,7 +66,3 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
  
  
-
- .mat-header-cell:first-child {
-
- }
