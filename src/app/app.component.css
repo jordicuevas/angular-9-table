@@ -105,4 +105,7 @@ tr:last-child td {
   border-bottom: 0px solid !important;
 }
 
+::ng-deep.mat-select-value {
   
+  text-align: center !important;
+}
