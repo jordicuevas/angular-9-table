@@ -1,14 +1,22 @@
 table {
   width: 100% !important;
-  border-spacing:  0px !important;
   border-collapse: separate !important;
   padding: 20px !important ; 
-}
+ /* border-spacing: 4px 0px !important;*/
+ 
 
+}
+td {
+  padding: 6px !important;
+  text-align: center;
+  
+
+}
 td.mat-cell {
   border-bottom: 0px solid #fff !important;
  border-top: 0px solid #fff !important;
  background-color: #fff !important; 
+
 }
  
 .mat-header-cell {
@@ -38,10 +46,10 @@ td.mat-cell {
   border-top-right-radius: 25px !important;
   border-bottom-left-radius: 25px !important;
   font-weight: bold;
+   
 }
  
  td.mat-cell:first-child {
-   
   border-radius: 20px !important;
 }
 
@@ -50,12 +58,11 @@ td.mat-cell:last-child {
   border-bottom-right-radius: 20px !important;
   border-top-right-radius: 20px !important;
 } 
+ 
+ 
+ 
+ 
 
-td:first-child, th:first-child {
-  /*  background: #007598 !important;*/
-}
- 
- .cdk-column-position {
-  background-color:red !important;
-}
- 
+ .mat-header-cell:first-child {
+
+ }
