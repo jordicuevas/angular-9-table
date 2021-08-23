@@ -66,3 +66,14 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
  
  
+ 
+/*Bordes redondeados a la primera celda*/
+ tr:first-child td {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+/*Bordes redondeados a la ultima celda*/
+tr:last-child td {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
