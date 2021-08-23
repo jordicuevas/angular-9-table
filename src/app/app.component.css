@@ -1,3 +1,35 @@
 table {
-  width: 100%;
+  width: 100% !important;
+  border-spacing: 0 8px !important;
+  border-collapse: separate !important;
+ /* padding: 20px !important ;*/
 }
+
+td.mat-cell {
+  border-bottom: 2px solid #f5f5f5 !important;
+ border-top: 2px solid #f5f5f5 !important;
+ background-color: #f5f5f5 !important; 
+}
+ 
+.mat-header-cell:first-child{
+  background: #fd9f32
+
+  ;
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+}
+ 
+ td.mat-cell:first-child {
+  border-left: 2px solid #f5f5f5 !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+td.mat-cell:last-child {
+  border-right: 2px solid #f5f5f5 !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+} 
+
+ 
