@@ -12,8 +12,7 @@
         VARIACIÓN <br>
        SEGMENTOS
         <mat-form-field appearance="none">
-          <mat-label>Segmentos</mat-label>
-          <mat-select>
+           <mat-select>
             <mat-option *ngFor="let food of foods" [value]="food.value">
               {{food.viewValue}}
             </mat-option>
