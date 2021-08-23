@@ -17,8 +17,9 @@ td.mat-cell {
   border-bottom: 1px dashed #0073b9 !important;
   
  background-color: #fff !important; 
-
-}
+min-width: 50px;
+padding:25px !important;
+ }
  
 .mat-header-cell {
   background: #007598 !important;
@@ -52,14 +53,6 @@ td.mat-cell {
   border-right: 5px #fff solid !important;
 }
  
-/*estilos columna azul*/
- td.mat-cell:first-child {
-  background-color: #007598 !important;
-  margin-top: 10px !important;
-  color:white;
-  font-weight: bold;
-
-}
 
  
  
@@ -89,7 +82,7 @@ tr:first-child td {
   border-top-right-radius: 25px;
 }
 
-td.mat-cell {
+td.mat-cell:not(:first-of-type) {
   border-left: solid 1px #0073b9  !important;
   border-top: solid 1px #0073b9  !important;
   border-right: solid 1px #0073b9  !important;
@@ -102,4 +95,12 @@ tr:last-child td {
 
  
  
- 
+ /*estilos columna azul*/
+ td.mat-cell:first-child {
+  background-color: #007598 !important;
+   
+  color:white;
+  font-weight: bold;
+  border-right: 5px #fff solid !important;
+  border-bottom: 0px solid !important;
+}
