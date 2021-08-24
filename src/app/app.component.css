@@ -83,11 +83,12 @@ tr:last-child td {
 tr:first-child td {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  border-top: solid 1px #0073b9  !important;
+
 }
 
 td.mat-cell:not(:first-of-type) {
   border-left: solid 1px #0073b9  !important;
-  border-top: solid 1px #0073b9  !important;
   border-right: solid 1px #0073b9  !important;
 
 }
