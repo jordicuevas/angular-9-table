@@ -15,13 +15,7 @@ td {
 
 }
  
-td.mat-cell {
-  border-bottom: 1px dashed #0073b9 !important;
-  
- background-color: #fff !important; 
-min-width: 50px;
-padding:25px !important;
- }
+
  
 .mat-header-cell {
   background: #007598 !important;
@@ -87,7 +81,7 @@ tr:first-child td {
 
 }
  
-td.mat-cell:not(:first-of-type) {
+td.mat-cell:not(:first-child) {
   border-left: solid 1px #0073b9  !important;
   border-right: solid 1px #0073b9  !important;
   border-top: solid 1px #0073b9  !important;
@@ -115,4 +109,10 @@ tr:last-child td {
 }
 
   
- 
+td.mat-cell {
+  border-bottom: 1px dashed #0073b9 !important;
+  
+ background-color: #fff !important; 
+min-width: 50px;
+padding:25px !important;
+ }
