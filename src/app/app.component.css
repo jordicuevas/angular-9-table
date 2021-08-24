@@ -6,8 +6,7 @@ table {
  
 
 }
-
- 
+ /*alinear contenido de las celdas al centro*/
 td {
   padding: 6px !important;
   text-align: center;
@@ -15,8 +14,7 @@ td {
 
 }
  
-
- 
+/*reglas para la cabecera de la tabla*/
 .mat-header-cell {
   background: #007598 !important;
   width: 120px !important;
@@ -25,20 +23,21 @@ td {
   text-align: center;
   margin-left: 40px;
   padding:20px;
-  border: none !important;
- }
+  }
  
- 
+ /*borde redondeado superior izquierdo de la cabecera azul*/
 .mat-header-cell:nth-child(2) {
  
    border-top-left-radius: 25px !important;
     
 }
+/*borde redondeado superior derecho de la cabecera azul*/
 .mat-header-cell:last-child {
  
   border-top-right-radius: 25px !important;
    
 }
+
 /*estilos primera celda naranja*/
 .mat-header-cell:first-child{
   background: #fd9f32 !important;
@@ -90,7 +89,7 @@ td.mat-cell:not(:first-child) {
 
 /*estilo redondeado ultimas filas*/
 tr:last-child td {
-  border-bottom: px solid #0073b9 !important;
+  border-bottom: 1px solid #0073b9 !important;
 }
 
  
@@ -102,7 +101,7 @@ tr:last-child td {
   color:white;
   font-weight: bold;
   border-right: 5px #fff solid !important;
-  border-bottom:0px solid !important;
+  border-bottom:0px transparent !important;
   border-top: none  !important;
 }
 
