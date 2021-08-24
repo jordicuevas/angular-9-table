@@ -2,7 +2,7 @@ table {
   width: 100% !important;
   border-collapse: separate !important;
   padding: 20px !important ; 
-  border-spacing: 4px 0px !important;  
+  border-spacing: 0px 0px !important;  
  
 
 }
@@ -73,7 +73,7 @@ tr:last-child td {
 }
 
 /*Bordes redondeados a la primera celda*/
-tr:first-child td {
+tr:first-child td:not(:first-child) {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
    border-top: solid 1px #0073b9  !important;
@@ -88,7 +88,7 @@ td.mat-cell:not(:first-child) {
 }
 
 /*estilo redondeado ultimas filas*/
-tr:last-child td {
+tr:last-child td:not(:first-child)  {
   border-bottom: 1px solid #0073b9 !important;
 }
 
@@ -101,9 +101,8 @@ tr:last-child td {
   color:white;
   font-weight: bold;
   border-right: 5px #fff solid !important;
-  border-bottom:0px transparent !important;
-  border-top: none  !important;
-}
+  border-bottom: none !important;
+ }
 
 ::ng-deep.mat-select-value {
   
@@ -117,4 +116,8 @@ td.mat-cell {
  background-color: #fff !important; 
 min-width: 50px;
 padding:25px !important;
- }
+  }
+
+  
+
+ 
