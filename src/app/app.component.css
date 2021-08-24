@@ -77,18 +77,20 @@ tr:last-child td {
 tr:first-child td {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
- 
+   border-top: solid 1px #0073b9  !important;
 
 }
  
+/*bordes izquierdo y derecho centrales*/
 td.mat-cell:not(:first-child) {
   border-left: solid 1px #0073b9  !important;
   border-right: solid 1px #0073b9  !important;
-  border-top: solid 1px #0073b9  !important;
+  /*border-top: solid 1px #0073b9  !important;*/
 }
 
+/*estilo redondeado ultimas filas*/
 tr:last-child td {
-  border-bottom: 1px solid #0073b9 !important;
+  border-bottom: px solid #0073b9 !important;
 }
 
  
@@ -96,11 +98,12 @@ tr:last-child td {
  /*estilos columna azul*/
  td.mat-cell:first-child {
   background-color: #007598 !important;
-   
+     
   color:white;
   font-weight: bold;
   border-right: 5px #fff solid !important;
-  border-bottom: 0px solid !important;
+  border-bottom:0px solid !important;
+  border-top: none  !important;
 }
 
 ::ng-deep.mat-select-value {
