@@ -39,7 +39,28 @@
       <th mat-header-cell *matHeaderCellDef> Symbol </th>
       <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
     </ng-container>
-
+<!-- Symbol Column -->
+<ng-container matColumnDef="symbol1">
+<th mat-header-cell *matHeaderCellDef> Symbol 1</th>
+<td mat-cell *matCellDef="let element"> {{element.symbol1}} </td>
+</ng-container><!-- Symbol Column -->
+<ng-container matColumnDef="symbol2">
+  <th mat-header-cell *matHeaderCellDef> Symbol 2</th>
+  <td mat-cell *matCellDef="let element"> {{element.symbol2}} </td>
+</ng-container><!-- Symbol Column -->
+<ng-container matColumnDef="symbol3">
+  <th mat-header-cell *matHeaderCellDef> Symbol 3</th>
+  <td mat-cell *matCellDef="let element"> {{element.symbol3}} </td>
+</ng-container><!-- Symbol Column -->
+<ng-container matColumnDef="symbol4">
+  <th mat-header-cell *matHeaderCellDef> Symbol 4</th>
+  <td mat-cell *matCellDef="let element"> {{element.symbol4}} </td>
+</ng-container>
+<!-- Symbol Column -->
+<ng-container matColumnDef="symbol5">
+<th mat-header-cell *matHeaderCellDef> Symbol 5</th>
+<td mat-cell *matCellDef="let element"> {{element.symbol5}} </td>
+</ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
