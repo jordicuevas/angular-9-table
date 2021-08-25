@@ -76,7 +76,7 @@ tr:first-child td:not(:first-child) {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
    border-top: solid 1px #0073b9  !important;
-
+   
 }
  
 /*bordes izquierdo y derecho centrales*/
@@ -97,8 +97,7 @@ tr:last-child td:not(:first-child)  {
  /*estilos columna azul*/
  td.mat-cell:first-child {
   background-color: #007598 !important;
-     
-  color:white;
+    color:white;
   font-weight: bold;
   border-right: 5px #fff solid !important;
   border-bottom: none !important;
@@ -115,7 +114,7 @@ td.mat-cell {
      background-color: #fff !important; 
 min-width: 50px;
 padding:25px !important;
-
+ 
   }
 
   
