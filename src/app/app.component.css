@@ -61,20 +61,42 @@ th.mat-header-cell,  td.mat-footer-cell {
  
  
 /*Bordes redondeados a la primera celda*/
- tr:first-child td {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+ tr:first-child td:nth-child(1) {
+   border-top-left-radius: 25px;
+  border-top-right-radius: 25px; 
 }
 /*Bordes redondeados a la ultima celda*/
-tr:last-child td {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+tr:last-child td:nth-child(1) {
+   border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; 
 }
+/*Bordes redondeados a la primera celda*/
+tr:first-child td:nth-child(2) {
+  border-top-left-radius: 25px;
+ 
+ margin: 20px !important;
+}
+/*Bordes redondeados a la ultima celda*/
+tr:last-child td:nth-child(2) {
+  border-bottom-left-radius: 25px;
+ }
+
+/*Bordes redondeados a la primera celda*/
+tr:first-child td:last-child {
+  border-top-right-radius: 25px;
+ 
+ margin: 20px !important;
+}
+/*Bordes redondeados a la ultima celda*/
+tr:last-child td:last-child {
+  border-bottom-right-radius: 25px;
+ }
+
 
 /*Bordes redondeados a la primera celda*/
 tr:first-child td:not(:first-child) {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  /*border-top-left-radius: 25px;
+  border-top-right-radius: 25px;*/
    border-top: solid 1px #0073b9  !important;
    
 }
@@ -82,7 +104,7 @@ tr:first-child td:not(:first-child) {
 /*bordes izquierdo y derecho centrales*/
 td.mat-cell:not(:first-child) {
   border-left: solid 1px #0073b9  !important;
-  border-right: solid 1px #0073b9  !important;
+  border-right: solid 1px #0073b9  !important; 
   /*border-top: solid 1px #0073b9  !important;*/
 }
 
@@ -101,6 +123,7 @@ tr:last-child td:not(:first-child)  {
   font-weight: bold;
   border-right: 5px #fff solid !important;
   border-bottom: none !important;
+  
  }
 
 ::ng-deep.mat-select-value {
