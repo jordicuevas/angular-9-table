@@ -4,13 +4,12 @@ table {
   padding: 20px !important ; 
   border-spacing: 0px 0px !important;  
  
-
 }
  /*alinear contenido de las celdas al centro*/
 td {
   padding: 6px !important;
   text-align: center;
-  
+ 
 
 }
  
@@ -90,6 +89,7 @@ td.mat-cell:not(:first-child) {
 /*estilo redondeado ultimas filas*/
 tr:last-child td:not(:first-child)  {
   border-bottom: 1px solid #0073b9 !important;
+  
 }
 
  
@@ -116,8 +116,11 @@ td.mat-cell {
  background-color: #fff !important; 
 min-width: 50px;
 padding:25px !important;
+
   }
 
   
-   
- 
+.mat-cell.cdk-column-name.mat-column-name {
+  display: grid !important;
+    margin-right: 10px !important;
+}
