@@ -84,12 +84,12 @@ tr:last-child td:nth-child(2) {
 /*Bordes redondeados a la primera celda*/
 tr:first-child td:last-child {
   border-top-right-radius: 25px;
- 
- margin: 20px !important;
-}
+  
+ }
 /*Bordes redondeados a la ultima celda*/
 tr:last-child td:last-child {
   border-bottom-right-radius: 25px;
+   
  }
 
 
@@ -104,14 +104,14 @@ tr:first-child td:not(:first-child) {
 /*bordes izquierdo y derecho centrales*/
 td.mat-cell:not(:first-child) {
   border-left: solid 1px #0073b9  !important;
-  border-right: solid 1px #0073b9  !important; 
+ /* border-right: solid 1px #0073b9  !important; */
   /*border-top: solid 1px #0073b9  !important;*/
 }
 
 /*estilo redondeado ultimas filas*/
 tr:last-child td:not(:first-child)  {
   border-bottom: 1px solid #0073b9 !important;
-  
+
 }
 
  
@@ -139,16 +139,9 @@ min-width: 50px;
 padding:25px !important;
  
   }
-
   
-.mat-cell.cdk-column-name.mat-column-name {
-     margin-right: 5px !important;
-     flex: 0 0 50px !important;
-     max-width: 40px;
+td.mat-cell:last-child {
+  border-right: solid 1px #0073b9 !important;
 }
-.mat-cell.cdk-column-weight.mat-column-weight {
   
-  margin-right: 5px !important;
-  flex: 0 0 50px !important;
-  max-width: 40px;
-}
+ 
