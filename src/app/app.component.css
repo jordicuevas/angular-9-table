@@ -3,7 +3,7 @@ table {
   border-collapse: separate !important;
   padding: 20px !important ; 
   border-spacing: 0px 0px !important;  
- 
+   overflow-x: auto;
 }
  /*alinear contenido de las celdas al centro*/
 td {
@@ -112,8 +112,7 @@ tr:last-child td:not(:first-child)  {
   
 td.mat-cell {
   border-bottom: 1px dashed #0073b9 !important;
-  
- background-color: #fff !important; 
+     background-color: #fff !important; 
 min-width: 50px;
 padding:25px !important;
 
@@ -121,6 +120,13 @@ padding:25px !important;
 
   
 .mat-cell.cdk-column-name.mat-column-name {
-  display: grid !important;
-    margin-right: 10px !important;
+     margin-right: 5px !important;
+     flex: 0 0 50px !important;
+     max-width: 40px;
+}
+.mat-cell.cdk-column-weight.mat-column-weight {
+  
+  margin-right: 5px !important;
+  flex: 0 0 50px !important;
+  max-width: 40px;
 }
